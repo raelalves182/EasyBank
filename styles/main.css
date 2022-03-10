@@ -1,0 +1,97 @@
+body {
+  font-family: 'Kumbh Sans', sans-serif;
+  margin: 0;
+}
+
+.container {
+  max-width: 1440px;
+  margin: auto;
+  position: relative;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 86%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+}
+
+.header .navbar ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+
+.header .navbar ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #9698a6;
+}
+
+.header .navbar ul li + li {
+  margin-left: 30px;
+}
+
+.hero-banner {
+  position: relative;
+  height: 920px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.hero-banner::after {
+  content: '';
+  background: url("../images/bg-intro-desktop.svg") no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translate(37%, -59%);
+          transform: translate(37%, -59%);
+}
+
+.hero-banner div {
+  max-width: 400px;
+  -webkit-transform: translate(0, 50%);
+          transform: translate(0, 50%);
+}
+
+.hero-banner div > h1 {
+  font-size: 40px;
+  font-weight: normal;
+  color: #2d314d;
+}
+
+.hero-banner p {
+  color: #9698a6;
+}
+
+.hero-banner img {
+  position: absolute;
+  top: -15%;
+  left: 52.2%;
+  z-index: 1;
+}
+
+.btn {
+  padding: 11px 24px;
+  border-radius: 26px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  background-color: #31d35c;
+}
+
+.footer {
+  bottom: 0;
+  position: absolute;
+}
+/*# sourceMappingURL=main.css.map */

@@ -81,6 +81,12 @@ body {
   z-index: 1;
 }
 
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .btn {
   padding: 11px 24px;
   border-radius: 26px;

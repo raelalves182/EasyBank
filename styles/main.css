@@ -104,6 +104,22 @@ body {
   width: 1066px;
 }
 
+.articles h1 {
+  color: #2d314d;
+}
+
+.articles__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.articles img {
+  max-width: 100%;
+}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;

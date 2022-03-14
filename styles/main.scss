@@ -91,6 +91,21 @@ body {
   }
 }
 
+.articles {
+  h1 {
+    color: hsl(233, 26%, 24%);
+  }
+
+  &__card {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}
+
 .cards {
   display: flex;
 }

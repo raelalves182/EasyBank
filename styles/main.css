@@ -81,6 +81,29 @@ body {
   z-index: 1;
 }
 
+.about {
+  margin-top: -200px;
+}
+
+.about__p {
+  max-width: 620px;
+}
+
+.about h1 {
+  font-size: 30px;
+  color: #2d314d;
+  font-weight: normal;
+}
+
+.about p {
+  color: #9698a6;
+}
+
+.about .cards {
+  margin-top: 60px;
+  width: 1066px;
+}
+
 .cards {
   display: -webkit-box;
   display: -ms-flexbox;

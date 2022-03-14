@@ -68,6 +68,29 @@ body {
   }
 }
 
+.about {
+  margin-top: -200px;
+
+  &__p {
+    max-width: 620px;
+  }
+
+  h1 {
+    font-size: 30px;
+    color: hsl(233, 26%, 24%);
+    font-weight: normal;
+  }
+
+  p {
+    color: hsl(233, 8%, 62%);
+  }
+
+  .cards {
+    margin-top: 60px;
+    width: 1066px;
+  }
+}
+
 .cards {
   display: flex;
 }

@@ -1,36 +1,36 @@
 body {
-  font-family: 'Kumbh Sans', sans-serif;
+  font-family: 'Public Sans', sans-serif;
   margin: 0;
   padding: 0;
+  background: #eee;
 }
 
-.container {
-	max-width: 960px;
-	margin: auto;
-	position: relative;
-}
+.header {
+  background: #fff;
+  box-shadow: 5px 5px 5px #d9d3d3;
 
-.header_menu {
-  display: flex;
-  justify-content: space-between;
-  width: 86%;
-  align-items: center;
-  padding: 10px 0;
-
-  .navbar ul {
+  .header_menu {
     display: flex;
-    list-style: none;
-    padding: 0;
-    li a {
-      font-size: 16px;
-      text-decoration: none;
-      color: hsl(233, 8%, 62%);
-    }
-    li + li {
-      margin-left: 30px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      li a {
+        font-size: 16px;
+        text-decoration: none;
+        color: hsl(233, 8%, 62%);
+      }
+      li + li {
+        margin-left: 30px;
+      }
     }
   }
 }
+
 
 .hero-banner {
 
@@ -124,6 +124,7 @@ body {
   border: none;
   cursor: pointer;
   background-color: hsl(136, 65%, 51%);
+  background-image: linear-gradient(to left, hsl(177deg, 78%, 44%), #65d165);
 }
 
 .footer {

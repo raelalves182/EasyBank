@@ -75,9 +75,10 @@ body {
 
 	&__recents {
 		margin-top: -200px;
+    overflow: hidden;
 	
 		.texto {
-			max-width: 50%;
+			max-width: 620px;
       color: hsl(233, 8%, 62%);
 		}
 	
@@ -91,13 +92,12 @@ body {
 			color: hsl(233, 8%, 62%);
 		}
 
-    div > div:nth-child(odd) {
-      margin-left: 10px;
+    div > div:nth-child(1n+1) {
+      margin-right: 16px;
     }
 	
 		.cards {
 			margin-top: 60px;
-			width: 1066px;
 		}
 	}
 }

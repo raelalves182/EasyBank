@@ -82,10 +82,11 @@ body {
 
 .about__recents {
   margin-top: -200px;
+  overflow: hidden;
 }
 
 .about__recents .texto {
-  max-width: 50%;
+  max-width: 620px;
   color: #9698a6;
 }
 
@@ -99,13 +100,12 @@ body {
   color: #9698a6;
 }
 
-.about__recents div > div:nth-child(odd) {
-  margin-left: 10px;
+.about__recents div > div:nth-child(1n+1) {
+  margin-right: 16px;
 }
 
 .about__recents .cards {
   margin-top: 60px;
-  width: 1066px;
 }
 
 .articles h1 {

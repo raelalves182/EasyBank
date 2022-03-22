@@ -103,17 +103,53 @@ body {
 }
 
 .articles {
+  margin-top: 100px;
+
   h1 {
     color: hsl(233, 26%, 24%);
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 40px;
   }
 
+  
   &__card {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__border {
+    border-radius: 5px;
+    margin: 10px;
+    width: 40%;
+  }
+
+  &__card--titulo {
+    h2 {
+      font-size: 10px;
+      color: hsl(233, 8%, 62%);
+    }
+
+    h3 {
+      font-size: 17px;
+      margin: 10px 0;
+      color: hsl(233, 26%, 24%);
+    }
+
+    p {
+      font-size: 14px;
+      color: hsl(233, 8%, 62%);
+      margin: 0 0 20px;
+    }
+
+    padding: 2px 16px;
+    background: #ddd;
   }
 
   img {
     max-width: 100%;
+    object-fit: cover;
   }
 }
 

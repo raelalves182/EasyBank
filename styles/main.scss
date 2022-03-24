@@ -168,6 +168,61 @@ body {
 }
 
 .footer {
-  bottom: 0;
-  position: absolute;
+  background: #2D314D;
+  margin-top: 80px;
+  height: 150px;
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+
+    .social {
+      margin-top: 20px;
+      
+      ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+        margin-top: 40px;
+      }
+    }
+
+    .contact {
+      display: contents;
+      color: #bebfc7;
+
+      &__one {
+        ul li:nth-child(2) {
+          margin: 10px 0;
+        }
+      }
+
+      &__two {
+        flex: 0 250px;
+        ul li:nth-child(2) {
+          margin: 10px 0;
+        }
+      }
+    }
+
+    .social__right {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: end;
+
+      p {
+        color: hsl(233, 8%, 62%);
+        margin: 20px 0 0;
+        font-size: 12px;
+      }
+    }
+  } 
 }

@@ -14,6 +14,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    position: relative;
   
     .navbar ul {
       display: flex;
@@ -23,9 +24,23 @@ body {
         font-size: 16px;
         text-decoration: none;
         color: hsl(233, 8%, 62%);
+        &:hover {
+          color: #2D314D;
+        }
       }
       li + li {
         margin-left: 30px;
+      }
+      li a.active::after {
+        content: "";
+        background-image: linear-gradient(to left, hsl(177deg, 78%, 44%), #65d165);
+        border-radius: 4px;
+        position: absolute;
+        left: 50%;
+        width: 5px;
+        height: 56px;
+        top: 25%;
+        transform: translate(-50%, 28px) rotate(90deg);
       }
     }
   }
@@ -165,6 +180,10 @@ body {
   cursor: pointer;
   background-color: hsl(136, 65%, 51%);
   background-image: linear-gradient(to left, hsl(177deg, 78%, 44%), #65d165);
+
+}
+.btn:hover {
+  background: hsl(136, 50%, 69%);
 }
 
 .footer {
@@ -185,6 +204,7 @@ body {
 
     .social {
       margin-top: 20px;
+      cursor: pointer;
       
       ul {
         display: flex;
@@ -192,11 +212,19 @@ body {
         padding: 0;
         margin-top: 40px;
       }
+
+      .img:hover {
+        filter: opacity(0.3) drop-shadow(0 0 0 #05d605); 
+      }
     }
 
     .contact {
       display: contents;
       color: #bebfc7;
+      cursor: pointer;
+      & ul li:hover {
+        color: #65d165;
+      }
 
       &__one {
         ul li:nth-child(2) {

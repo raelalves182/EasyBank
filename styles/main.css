@@ -295,4 +295,105 @@ body {
   margin: 20px 0 0;
   font-size: 12px;
 }
+
+/* Large Desktop */
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .cards {
+    max-width: 94%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .articles__card {
+    -webkit-box-align: initial;
+        -ms-flex-align: initial;
+            align-items: initial;
+  }
+  .footer__main .contact__two {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 120px;
+            flex: 0 120px;
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+  .header .btn {
+    display: none;
+  }
+  .hero-banner .back {
+    top: -150px;
+    left: 0;
+  }
+  .hero-banner .back img {
+    width: 100%;
+  }
+  .hero-banner .image {
+    left: 0;
+    top: -24px;
+    -webkit-transform: translate(-30%, -43%);
+            transform: translate(-30%, -43%);
+  }
+  .hero-banner .image img {
+    width: 220%;
+  }
+  .hero-banner .hero_content {
+    height: 560px;
+  }
+  .hero-banner .hero_content .text {
+    text-align: center;
+    margin-top: 100%;
+  }
+  .hero-banner .hero_content .text p {
+    max-width: 386px;
+    margin-left: 10px;
+  }
+  .about__recents h1, .about__recents p {
+    text-align: center;
+  }
+  .about__recents .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .articles h1 {
+    text-align: center;
+  }
+  .articles .articles__card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .articles .articles__border {
+    width: 90%;
+  }
+  .footer {
+    min-height: 60vh;
+    text-align: center;
+  }
+  .footer .footer__main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .footer__main .social__right {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer .footer__main .contact__two {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 130px;
+            flex: 0 130px;
+  }
+}
 /*# sourceMappingURL=main.css.map */

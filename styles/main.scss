@@ -254,3 +254,117 @@ body {
     }
   } 
 }
+
+/* Large Desktop */
+@media (min-width: 1200px) {
+  
+}
+
+/* Desktop */
+@media screen and (min-width: 1024px) and (max-width: 1199px) {
+  .cards {
+    max-width: 94%;
+  }
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .articles {
+    &__card {
+      align-items: initial;
+    }
+  }
+
+  .footer__main .contact {
+    &__two {
+      flex: 0 120px;
+    }
+  }
+}
+
+/* Mobile */
+@media screen and (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+
+  .header .btn {
+    display: none;
+  }
+
+  .hero-banner .back {
+    top: -150px;
+    left: 0;
+
+    img {
+      width: 100%;
+    }
+
+  }
+
+  .hero-banner .image {
+    left: 0;
+    top: -24px;
+    transform: translate(-30%, -43%);
+
+    img {
+      width: 220%;
+    }
+  }
+
+  .hero-banner .hero_content {
+    height: 560px;
+  }
+
+  .hero-banner .hero_content .text {
+    text-align: center;
+    margin-top: 100%;
+
+    p {
+      max-width: 386px;
+      margin-left: 10px;
+    }
+  }
+
+  .about__recents {
+    h1, p {
+      text-align: center;
+    }
+
+    .cards {
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .articles {
+    h1 {
+      text-align: center;
+    }
+
+    .articles__card {
+      flex-direction: column;
+    }
+
+    .articles__border {
+      width: 90%;
+    }
+  }
+
+  .footer {
+    min-height: 60vh;
+    text-align: center;
+
+    .footer__main {
+      flex-direction: column;
+
+      .social__right {
+        align-items: center;
+      }
+
+      .contact__two {
+        flex: 0 130px;
+      }
+    }
+  }
+}

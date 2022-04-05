@@ -188,9 +188,9 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .articles__border {
@@ -338,6 +338,12 @@ body {
   font-size: 12px;
 }
 
+.attribution {
+  background: #eee;
+  padding: 10px;
+  text-align: center;
+}
+
 /* Large Desktop */
 /* Desktop */
 @media screen and (min-width: 1024px) and (max-width: 1199px) {
@@ -417,13 +423,16 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .articles .articles__border {
     width: 90%;
   }
   .footer {
-    min-height: 60vh;
     text-align: center;
+    padding-bottom: 20px;
   }
   .footer .footer__main {
     -webkit-box-orient: vertical;
